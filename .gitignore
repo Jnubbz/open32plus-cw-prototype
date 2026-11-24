@@ -1,0 +1,6 @@
+build/
+*.wav
+*.o
+# never commit flash dumps of your radio
+*.bin
+dumps/

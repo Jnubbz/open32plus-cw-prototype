@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  host:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        cc: [gcc, clang]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and run unit tests
+        run: make test CC=${{ matrix.cc }}
+      - name: Build simulator and render a sample
+        run: |
+          make sim CC=${{ matrix.cc }}
+          ./build/cw2wav -w 20 -c KN0BLE -o cq.wav "CQ CQ DE {CALL} {CALL} <AR> K"
+      - uses: actions/upload-artifact@v4
+        if: matrix.cc == 'gcc'
+        with:
+          name: sample-cq-wav
+          path: cq.wav
