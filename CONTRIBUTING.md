@@ -5,7 +5,17 @@ written matters as much as what it does.
 
 ## Clean-room rules (mandatory)
 
-open32plus must contain only code we have the right to license under GPLv3.
+open32plus must contain only code we have the right to license under the MIT license.
+Contributions are accepted under MIT. Every source file needs SPDX headers:
+
+```c
+/* SPDX-License-Identifier: MIT
+ * SPDX-FileCopyrightText: 2026 Your Name (CALLSIGN) */
+```
+
+Third-party code is allowed only under a permissive license (MIT, BSD, ISC, Apache-2.0)
+and must keep its own headers. **No GPL, non-commercial, or vendor-SDK code**, so the
+project stays compatible with other permissive open firmware projects.
 
 **Allowed sources of knowledge**
 - Chip datasheets and application notes

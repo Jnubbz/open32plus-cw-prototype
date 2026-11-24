@@ -1,4 +1,5 @@
-/* SPDX-License-Identifier: GPL-3.0-only
+/* SPDX-License-Identifier: MIT
+ * SPDX-FileCopyrightText: 2026 Josh Noble (KN0BLE)
  * Minimal test runner - no external dependencies.
  */
 #include <stdio.h>

@@ -1,4 +1,5 @@
-/* SPDX-License-Identifier: GPL-3.0-only
+/* SPDX-License-Identifier: MIT
+ * SPDX-FileCopyrightText: 2026 Josh Noble (KN0BLE)
  * open32plus - Morse timing engine
  *
  * Turns text into a stream of key-down / key-up elements with durations.

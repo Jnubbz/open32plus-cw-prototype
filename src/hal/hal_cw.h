@@ -1,4 +1,5 @@
-/* SPDX-License-Identifier: GPL-3.0-only
+/* SPDX-License-Identifier: MIT
+ * SPDX-FileCopyrightText: 2026 Josh Noble (KN0BLE)
  * open32plus - hardware abstraction for CW keying
  *
  * Implemented by platform/sim (PC) and, later, platform/dm32 (radio).

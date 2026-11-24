@@ -1,4 +1,5 @@
-/* SPDX-License-Identifier: GPL-3.0-only
+/* SPDX-License-Identifier: MIT
+ * SPDX-FileCopyrightText: 2026 Josh Noble (KN0BLE)
  * open32plus - CW macro expansion
  *
  * Expands templates like "CQ CQ DE {CALL} {CALL} K" for the preset message bank.

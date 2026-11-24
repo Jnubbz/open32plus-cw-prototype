@@ -10,7 +10,7 @@
 Existing alternative firmwares for the DM-32 family are *source-available* but restrict
 commercial use, and some depend on pieces of the stock firmware. open32plus is:
 
-1. **Actually open** – GPLv3, clean-room, 100% our own code, reproducible builds.
+1. **Actually open** – MIT-licensed, clean-room, 100% our own code, reproducible builds.
 2. **Simulator-first** – the UI and logic build and run on a PC, so features can be
    developed and tested without flashing a radio.
 3. **Reliable** – unit tests + CI on every commit, and an on-air test checklist for every
@@ -61,6 +61,9 @@ All commits must be signed off (`git commit -s`).
 
 ## License
 
-GPL-3.0-only. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE). Every source file carries an SPDX header.
+
+MIT was chosen so the CW work can be shared with other permissively licensed
+open firmware projects (for example [RadioFoundry](https://github.com/RadioFoundry/RadioFoundry)).
 
 73 de KN0BLE
